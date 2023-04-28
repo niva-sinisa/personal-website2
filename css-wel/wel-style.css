@@ -1,0 +1,164 @@
+/*using external CSS, that is one or multiple separate CSS file(s) which is/are used/shared 
+by your HTML code files based on the <link> tag. */
+
+			* {
+				font-family: Arial, Verdana, sans-serif;
+			} /*sans-serif (+1)*/
+
+				body {
+				color: rgb(243,186,22);  /*goldenyellow RGB */
+				background-color: #4f5255;/*set different background colors  for a whole page*/
+				padding: 10px;
+				position: relative;
+				top: 100px;
+				left: 10px;
+				line-height: 1.4em; 
+			}  /*change the line spacing of a paragraph of text ;*/
+
+
+			/*Aligning images in CSS: prefer to algin the photo of the owner to the left. */
+				#left {  
+					/*Controlling size of images in CSS : at least applicable for the photo of the owner*/
+					width: 400px;
+					height: auto;
+					float: left;  }
+
+
+			/*set the width, height*/
+			.introduction {
+				width: 600px;
+				height: 80px;
+				/*set different values for the four margins and four paddings of a box */
+				margin: 20px;
+				padding: 50px;
+				display: inline-block;
+				border: 8px solid lavender;
+				background-color: #3f4244; /*-- HEX code */ 
+				color:  lavender;/*color name */
+
+				/*Adding background images : you may apply this to a single HTML element or 
+to a whole page. Show at least one example.*/
+				background-image: url("../images/header.gif");
+				background-repeat: no-repeat;
+ 				background-size: cover;
+  				position: relative;
+				}
+
+
+			h1{
+				font-family: ChunkFiveRegular, Georgia, serif;
+				width: 500px;
+				height: 30px;
+				margin: 20px;
+				display: inline-block;
+				border: 8px solid #3f4244;
+				color: #4f5255; /*drak gray*/
+				background-color: rgb(243,186,22); /* golden yellow - set different background for its different sections */
+				padding: 10px;
+
+				}
+			
+
+			/* cover an example that uses a font downloaded from / directly linked to a website that provides open source fonts / its URL (i.e., if using Google’s Font website: https://fonts.google.com/).*/
+			@font-face {
+				font-family: 'ChunkFiveRegular';
+				src: url('fonts/chunkfive.eot');
+				src: url('fonts/chunkfive.eot?#iefix') format('embedded-opentype'),
+	     				url('fonts/chunkfive.woff') format('woff'),
+	     				url('fonts/chunkfive.ttf') format('truetype'),
+	     				url('fonts/chunkfive.svg#ChunkFiveRegular') format('svg');}
+			h3 {
+				font-family: ChunkFiveRegular, Georgia, serif;} /*serif*/
+			}
+
+			p em {
+				color: black;}
+			i {
+				color: red;}
+			p b {
+				color: blue !important;
+				font-size: 1.1em;}  /*EMS*/
+			b {
+				color: lavender;
+				font-size: 1.1em;}
+			p strong {
+				color: yellow;
+				font-size: 18px;} /*pixels*/
+ 
+			p.well:first-letter {
+				font-size: 150%; 
+			}	
+
+			/*id selectors.*/
+			#hi{
+				font-family: "Courier New", Courier, monospace; /*monospace*/
+				font-size: 50px;
+				color: lavender;
+				text-shadow: -1px -1px black;
+			}
+
+			/*class selectors.*/
+			.links {
+				background-color: hsl(45, 90% , 52%); /* gold*/
+				padding: inherit;
+				font-size: 75%;
+			color: #3f4244;
+			border: 8px solid #3f4244;  /*black*/
+			margin: 1%;
+			text-align: center;}
+
+			.content{
+				margin-bottom: 1em;
+			} 
+
+			.links1 {
+				background-color: hsl(45, 90% , 52%); /* gold*/
+				padding: inherit;
+				/*percentages(+1)*/
+				font-size: 75%; 
+			color: #3f4244;
+			border: 8px solid #3f4244;  /*black*/
+			text-align: right;
+			position: fixed;
+				top: 0px;
+				right: 0px;
+				margin: 20px;
+				padding: 10px;
+				z-index: 10;
+			} 
+
+			p {
+
+				font-size: 100%;}
+
+
+			div#lists{
+				
+				background-color: rgb(243,186,22);/* gold*/
+				padding: inherit;
+				font-size: 75%;
+				color: #3f4244; /*black*/
+				border: 8px solid #3f4244;
+			}
+			 img{
+			 	border: 8px solid rgb(243,186,22);
+			 }
+
+			 .thru{
+			 	text-decoration: line-through; /*line-through*/
+			 }
+
+
+			 /*change the color for all the links after visited. */
+			a:link {
+				color: lightblue;
+				text-decoration: none;}
+			a:visited {
+				color: lavender;}
+			a:hover {
+				color: blue;
+				text-decoration: underline;}
+			a:active {
+				color: orange;}
+
+			 

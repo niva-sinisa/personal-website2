@@ -1,0 +1,298 @@
+/*using external CSS, that is one or multiple separate CSS file(s) which is/are used/shared 
+by your HTML code files based on the <link> tag . */
+
+* {
+
+		font-family: font-family: "Courier New", Courier, monospace;}
+
+
+body {
+	color: rgb(243,186,22);  /*goldenyellow RGB */
+	background-color: #4f5255; /*set different background colors  for a whole page*/
+	padding: 10px;
+	position: relative;
+	top: 100px;
+	left: 10px;
+	line-height: 1.4em; /*change the line spacing of a paragraph of text*/
+	box-sizing: border-box;
+}
+
+#feedback{
+	color: red;
+}
+
+.true {
+    background: url("../images/tick.png");
+    display: block;
+    float:right;
+    height: 25px;
+    width: 25px;}
+
+.false {
+background: url("../images/cross.png");
+    display: block;
+    float:right;
+    height: 25px;
+    width: 25px;}
+
+
+
+
+.header {
+
+	padding: 30px;
+	text-align: center;
+}
+
+.bool{
+width: 100px;}
+
+	/*change the color for all the links after visited*/
+a:link {
+	color: lightblue;
+	text-decoration: none;}
+
+a:visited {
+	color: lavender;}
+
+a:hover {
+	color: blue;
+	text-decoration: underline;}
+
+a:active {
+	color: orange;}
+
+	/* cover an example that uses a font downloaded from / directly linked to a website that provides open source fonts / its URL (i.e., if using Google’s Font website: https://fonts.google.com/).*/
+@font-face {
+	font-family: 'ChunkFiveRegular';
+	src: url('fonts/chunkfive.eot');
+	src: url('fonts/chunkfive.eot?#iefix') format('embedded-opentype'),
+ 				url('fonts/chunkfive.woff') format('woff'),
+ 				url('fonts/chunkfive.ttf') format('truetype'),
+ 				url('fonts/chunkfive.svg#ChunkFiveRegular') format('svg');}
+
+h1{
+	font-family: ChunkFiveRegular, Georgia, serif;
+	color: rgb(243,186,22); /* golden yellow*/
+	font-size: 300%;
+	text-decoration: underline;  /*underline*/
+	letter-spacing: 0.2em; /*letter-spacing of a heading*/
+	text-shadow: -1px -1px black; /*add text shadow;*/
+	line-height: 1.6em;
+	
+}
+
+
+h4{
+	text-align: right; /*right alignment example for a heading or paragraph;*/
+}
+
+
+h3 {
+	font-family: ChunkFiveRegular, Georgia, serif; 
+	color: rgb(243,186,22); 
+	font-style: italic;  /*italic*/
+}
+
+h6 {
+	text-transform: uppercase; /*uppercase */
+	word-spacing: 1em; /*word spacing of a heading*/
+}
+
+p b {
+	color: blue !important;
+	font-size: 1.1em;}  
+b {
+	color: lavender;
+	font-size: 1.1em;}
+p strong {
+	color: yellow;
+	font-size: 18px;} /*pixels */
+
+
+
+
+/*at the same time use z-index to handle 
+overlapping elements; */
+.links1 {
+	background-color: hsl(45, 90% , 52%); /* gold*/
+	padding: inherit;
+	font-size: 75%;
+	color: #3f4244;
+	border: 8px solid #3f4244;  /*black*/
+	text-align: right;
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	margin: 20px;
+	padding: 10px;
+	z-index: 10;
+} 
+
+
+p {
+	font-size: 100%;
+	}
+
+div#lists{
+	background-color: rgb(243,186,22);/* gold*/
+	padding: inherit;
+	font-size: 75%;
+	color: #3f4244; /*black*/
+	border: 8px solid #3f4244;
+}
+
+img{
+ 	border: 8px solid rgb(243,186,22);
+ }
+
+
+
+figcaption{
+	text-transform: capitalize; /*capitalize*/
+}
+
+.iden{
+ 	text-indent: 20px; /*add text indentation for a paragraph/heading; */
+ }
+
+p.well:first-letter {
+	font-size: 150%; /*change the style (i.e., its size) for the first letter of a paragraph*/
+}
+
+/*min-width, max-width, min-height, max-height,*/
+th {
+	border-bottom: 1px solid #0088dd; 
+	text-align: left; 
+	color: black;
+	font-weight: normal;}
+td {
+	color: black;
+	
+	vertical-align: top;
+	line-height: 1.4em;}
+td.description {
+	color: black;
+	
+	text-align: left;
+	padding: 5px;
+	margin: 0px;}
+
+
+
+
+	/*specify an image to act as a bullet point.*/
+ul {
+	list-style-position: outside;
+	width: 500px;
+	list-style-image: url("../images/star.png");
+}
+
+
+
+
+/* specify the shape of the bullet points in an unordered or ordered list based on predefined values (i.e., “disc”, and “lower-roman”);*/
+ol {
+	list-style-position: outside;
+	width: 500px;
+list-style-type: lower-roman;}
+li {
+	margin: 10px;}
+
+
+
+
+tr:hover {
+	background-color: lavender;}
+
+
+
+
+fieldset {
+
+	width: 310px;
+	margin-top: 20px;
+	border: 1px solid #d6d6d6;
+	background-color: lavender;
+	line-height: 1.6em;}
+
+legend {
+	color: black;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 125%;
+	}
+
+	/* style text inputs/areas , 
+	style labels on forms to algin them*/
+
+input[type="text"] {
+	width: 120px;
+	border: 1px solid #d6d6d6;
+	padding: 2px;
+	outline: none;}
+
+input[type="text"]:focus,
+input[type="text"]:hover {
+	background-color: #d0e2f0;
+	border: 1px solid #999999;}
+
+	/*submit buttons (+2)*/
+input[type="submit"] {
+	border: 1px solid #006633;
+	background-color: rgb(243,186,22);;
+	color: #ffffff;
+	border-radius: 5px;
+	padding: 5px;
+	margin-top: 10px;}
+
+input[type="submit"]:hover {
+	border: 1px solid #006633;
+	background-color: #00CC33;
+	color: #ffffff;
+	cursor: pointer;}
+
+.know {
+	float: left;
+	width: 160px;
+	clear: left;}
+
+.submit {
+	width: 310px;
+	text-align: right;}
+
+
+
+/*design a liquid (preferred) layout for your website (+4); */
+/* Create three equal columns that floats next to each other */
+
+
+.card {
+		float: left;
+		width: 30%;
+		padding: 15px;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+		content: "";
+		display: table;
+		clear: both;
+}
+
+.links {
+		background-color: hsl(45, 90% , 52%); /* gold*/
+		padding: inherit;
+		font-size: 75%;
+		color: #3f4244;
+		border: 8px solid #3f4244;  /*black*/
+		text-align: center;
+		margin-top: 20px;
+} 
+
+@media screen and (max-width:800px) {
+.card {
+		width: 100%;
+}
+

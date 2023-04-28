@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Niva's Hobbies</title>
+
+		<link href="css/styles.css" type="text/css" rel ="stylesheet" />
+
+	</head>
+	<body>
+		
+		<!-- links to pages of the personal homepage website -->
+		<div class="links1">
+			<p> <a href="../welcome/welcome.html">Home</a> | <a href="../cv/Niva_CV1.html">CV</a> | <a href="../hobbies/Hobbies.html">Hobbies</a> |<a href="../awards/awards.html"> Awards</a> | <a href="../research/research.html">Research Papers/Literatures</a> | <a href="../contact/contact.html">Contact</a>  </p> 
+		</div>
+
+		<div class="header">
+			<h1> Niva's Hobbies List</h1>
+			
+
+		</div>
+
+		<div class="bool">
+				<p >Singing <span id="no"></span></p>
+				<p>Dancing <span id="yes"></span> </p>
+			</div>
+
+			<p id="hob1"></p>
+			<p id="hob2"></p> 
+
+
+
+<div class="row">
+
+
+    <div class="card">
+		<p>
+			<i>Click on any of the images below to know more about each of my hobbies.</i>
+			<br/>
+			<br/>
+
+			<!-- Use of image buttons -->
+		
+							<form action="GD.html">
+								<input type="image" src="images/logo_digital.jpg" alt="logo" width="59.6" height="47" /> Graphic Design
+								<input type="hidden" name="hobbies"  />
+							</form>
+
+							<form action="arts.html">
+								<input type="image" src="images/art-me.jpg" alt="me" width="48.975" height="49.075" /> Arts
+								<input type="hidden" name="hobbies" />
+							</form>
+
+							<form action="dance.html">
+								<input type="image" src="images/art-dance.jpg" alt="dance" width="43.52" height="50.34" /> Dance								<input type="hidden" name="hobbies" />
+							</form>
+
+							<form action="rock.html">
+								<input type="image" src="images/rock.jpg" alt="rock" width="42.375" height="39.625" /> Rockwall Climbing
+								<input type="hidden" name="hobbies" />
+							</form>
+
+							<form action="food.html">
+								<input type="image" src="images/f-donut.jpg" alt="food" width="56.78" height="43.52" /> Cooking 
+								<input type="hidden" name="hobbies" />
+							</form>
+				<br/>
+				<br/>
+
+				</div>
+    <div class="card">
+
+			<!-- use of table tag(+6) -->	
+			<table> <!-- change border or background (+2) -->
+			<tr>
+				<th></th>
+				<th>Years of experience</th>
+				<th >Skill level out of 10</th>
+			</tr>
+			<tr>
+				
+				<th>Graphic Designing</th>
+				<td id="number">1</td>
+				<td >7</td>
+			</tr>
+			<tr>
+				
+				<th>Arts</th>
+				<td>13</td>
+				<td>9</td>
+			</tr>
+
+			<tr>
+				
+				<th>Dance</th>
+				<td>18</td>
+				<td >9</td>
+			</tr>
+			<tr>
+				<th>Rockwall</th>
+				<td>3</td>
+				<td >7</td>
+			</tr>
+
+			<tr>
+				<th>Cooking</th>
+				<td>4</td>
+				<td>8</td>
+			</tr>
+			<caption> <b> Table below tracks the number of years I spent and the level of skill I acquired.</b></caption> <!-- add a caption to table(+2) -->	
+		</table>
+		</p>
+		
+<br/>
+<br/>
+
+</div>
+    <div class="card">
+
+<form action="http://www.example.com/form.php" method="get">
+			<fieldset>
+				<legend>Tell me about your interests</legend>
+				<p><label class="title" for="name">Your name:</label>
+					 <input type="text" name="name" id="name"><br />
+					 <label class="title" for="email">Your email:</label>
+					 <input type="text" name="email" id="email"> <br/><span id="feedback"></span></p>
+				<p><label for="interest" class="title">Your top interest:</label>
+					 <select name="interest" id="interest">
+						 <option value="dn">Dance</option>
+						 <option value="sp">Sports</option>
+						 <option value="at">Arts</option>
+						 <option value="ms">Music</option>
+						 <option value="tv">Travel</option>
+						 <option value="nt">N/A</option>
+					 </select></p>
+				<span class="know">Do you want to know more about me?</span>
+				<label><input type="radio" name="know" value="yes" /> Yes</label>
+				<label><input type="radio" name="know" value="no" /> No</label></p>
+			</fieldset>
+ 	    <div class="submit"><input type="submit" value="Submit" /></div>
+		</form>
+
+		</div>
+  
+</div>
+
+		<br/>
+		<!-- start of links to other pages -->
+		<div class="links">
+			<p> <a href="../welcome/welcome.html">Home</a> | <a href="../cv/Niva_CV1.html">CV</a> | <a href="Hobbies.html">Hobbies</a> |<a href="../awards/awards.html"> Awards</a> | <a href="../research/research.html">Research Papers/Literatures</a> 
+				<br/>
+				<br/>
+				<br/>
+				<h3><a href="../contact/contact.html">Contact</a> </h3>
+
+				<!-- use of author details tag(+1) -->
+				<address>
+					<p> <a href="mailto:Niva.Shrestha@usm.edu">Niva.Shrestha@usm.edu</a>
+					<br/>
+					Kalimati-13, Kathmandu, Nepal</p>
+				</address>
+
+				<form action="https://www.instagram.com/happyfeet.arts/" target="_blank">
+								<input type ="image" src="images/instagram-logo.png" alt="insta" width="50" height="40" /> 
+								<input type="hidden" name="instagram" />
+							</form>
+
+			</p>
+		</div>
+		<!-- end of links -->
+
+		
+
+		<script src="js/bool.js"></script>
+		
+	</body>
+	<!-- end of page contents -->
+
+</html>
